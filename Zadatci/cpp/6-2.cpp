@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    float broj = 0;
+    float sum = 0;
+    int brojBrojeva = 0;
+    
+    while (sum < 1000) {
+        
+        cout<<"Ucitaj broj: ";
+        cin>>broj;
+        sum = sum + broj;
+        brojBrojeva++;
+        
+        if (sum > 1000) {
+            cout<<"Suma je preko 1000 ("<<sum<<"), pokusajte s manjim brojem!";
+            sum = sum - broj;
+            brojBrojeva--;
+        }
+    }
+    
+    cout<<"Broj ucitanih brojeva je bilo: "<<brojBrojeva<<" a suma ucitanih brojeva je "<<sum;
+}

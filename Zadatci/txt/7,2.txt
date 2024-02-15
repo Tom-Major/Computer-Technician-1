@@ -1,0 +1,18 @@
+#include <iostream>     
+using namespace std;
+int main ()
+{
+    int broj = 0;
+    int brojBrojeva = 0;
+    
+    do {
+        cout<<"Ucitaj broj izmedu -10 i 10: ";
+        cin>>broj;
+        brojBrojeva++;
+    } while(!(broj < -10 || broj > 10));
+    
+    brojBrojeva--;
+    
+    cout<<"Korisnik je ucitao "<<brojBrojeva<<" ispravnih brojeva";
+  return 0;
+}

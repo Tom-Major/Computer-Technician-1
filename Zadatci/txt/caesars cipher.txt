@@ -1,0 +1,13 @@
+#include <iostream>     
+using namespace std;
+int main ()
+{
+    char c;
+    int n;
+    cout<<"upisi char: ";
+    cin>>c;
+    n = c;
+    n+=3;
+    c = n;
+    cout<<"char: "<<c;
+}
